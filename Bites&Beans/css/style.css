@@ -146,7 +146,7 @@ body {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #cf711f;
+  color: #e52d27;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
@@ -172,12 +172,12 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
+  background-color: #e52d27;
   color: #fff;
 }
 
 .btn-form {
-  background-color: #45260a;
+  background-color: #e52d27;
   color: #fdf2e9;
   align-self: end;
   padding: 1.2rem;
@@ -190,7 +190,7 @@ body {
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #cf711f;
+  background-color: #b31217;
   color: #fff;
 }
 
@@ -202,7 +202,7 @@ body {
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #fdf2e9;
+  background-color: #b79891;
   /* border: 3px solid #fff; */
   /* Trick to border inside */
   box-shadow: inset 0 0 0 3px #fff;
@@ -227,7 +227,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background: #c3b0ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c3b0ac,
+    #b79891
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c3b0ac,
+    #b79891
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   /* Beacause we want header to be sticky later */
   height: 9.6rem;
@@ -262,7 +272,7 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color: #e52d27;
 }
 
 .main-nav-link.nav-cta:link,
@@ -270,12 +280,12 @@ body {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #e67e22;
+  background-color: #e52d27;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #cf711f;
+  background-color: #b31217;
 }
 
 /* Mobile */
@@ -322,8 +332,44 @@ body {
 /********************/
 
 .section-hero {
-  background-color: #fdf2e9;
+  background: #c3b0ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c3b0ac,
+    #b79891
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c3b0ac,
+    #b79891
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 4.8rem 0 9.6rem 0;
+}
+
+/* About us! */
+
+.section-section-about-us {
+  padding: 9.6px 0;
+  /* margin-top: 1.6rem; */
+  /* margin-bottom: 1.6rem; */
+}
+
+.subheading-about-us {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #e52d27;
+  text-transform: uppercase;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.container-aboutus {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 35px auto;
 }
 
 .hero {
@@ -456,7 +502,13 @@ body {
 /********************/
 
 .section-testimonials {
-  background-color: #fdf2e9;
+  background: #c3b0ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c3b0ac,
+    #b79891
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c3b0ac, #b79891);
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
@@ -674,17 +726,23 @@ body {
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-  background-image: linear-gradient(to left bottom, #e67e22, #eb984e);
+  background: #c3b0ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c3b0ac,
+    #b79891
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c3b0ac, #b79891);
   overflow: hidden;
 }
 
 .cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #45260a;
+  color: #000000;
 }
 
 .cta .heading-secondary {
-  color: #45260a;
+  color: #000000;
   margin-bottom: 3.2rem;
 }
 
@@ -695,12 +753,7 @@ body {
 }
 
 .cta-img-box {
-  background-image: linear-gradient(
-      to left bottom,
-      rgba(235, 151, 78, 0.35),
-      rgba(235, 125, 34, 0.35)
-    ),
-    url("../img/eating.jpg");
+  background-image: url("../img/banbentry.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -727,7 +780,7 @@ body {
   font-family: inherit;
   color: inherit;
   border: none;
-  background-color: #fdf2e9;
+  background-color: #fff;
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -751,9 +804,10 @@ body {
   justify-content: center;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #cf711f;
+  color: #e52d27;
   text-transform: uppercase;
   /* margin-top: 2.6rem; */
+  margin-top: -7.4rem;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
@@ -775,6 +829,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
+  margin-bottom: 1.6rem;
 }
 
 .map {
@@ -787,12 +842,19 @@ body {
 /********************/
 
 .footer {
-  padding: 12.8rem 0;
+  padding: 0.8rem 0;
   border-top: 1px solid #eee;
+  background: #c3b0ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c3b0ac,
+    #b79891
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c3b0ac, #b79891);
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr;
 }
 
 .logo-col {
@@ -824,7 +886,7 @@ body {
 .copyright {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #767676;
+  color: #000000;
   margin-top: auto;
 }
 
@@ -836,6 +898,7 @@ body {
 
 .address {
   margin-bottom: 2.4rem;
+  color: #000000;
 }
 
 .footer-heading {
@@ -855,11 +918,23 @@ body {
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
-  font-size: 1.6rem;
-  color: #767676;
+  font-size: 1.4rem;
+  color: #000000;
 }
 
 .footer-link:hover,
 .footer-link:active {
-  color: #555;
+  color: #e52d27;
+}
+
+.time {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+.partner-img {
+  display: flex;
+  display: block;
+  justify-content: center;
 }
